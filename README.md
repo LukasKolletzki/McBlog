@@ -37,6 +37,11 @@ If you want to customize your theme, this information might be useful:
 * Article preview
 * Different authors
 
+##External libraries
+McBlog uses external libraries and classes
+* [Parsedown](https://github.com/erusev/parsedown)
+* [RainTPL](http://raintpl.com)
+
 ##License
 twoffein-api is a simple class for accessing the Twoffein API
 Copyright (C) 2013 Lukas Kolletzki
