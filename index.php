@@ -11,6 +11,7 @@ define("INLINE", true);
 
 $cfg = require_once("includes/config.php");
 define("BASE_URL", $cfg["blog"]["url"]);
+require_once("includes/functions.php");
 require_once("includes/raintpl.class.php");
 require_once("includes/parsedown.class.php");
 
@@ -41,8 +42,12 @@ foreach ($articles_file as $article_file) {
 	preg_match("/^@{3}(.*)@{3}/s", $article_content, $matches);
 	$articles[] = json_decode($matches[1], true);
 	$articles[key($articles)]["content"] = Parsedown::instance()->parse(str_replace($matches[0], "", $article_content));
+	$articles[key($articles)]["filetime"] = filemtime("articles/" . $article_file);
 	next($articles);
 }
+
+//sort articles by filetime
+usort($articles, "sort_articles");
 
 //put everything together
 $tpl->assign("blog", $cfg["blog"]);
