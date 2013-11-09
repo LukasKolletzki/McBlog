@@ -1,0 +1,118 @@
+/**
+ * Main stylesheet
+ * @author Lukas Kolletzki <lukas@kolletzki.info>
+ * @version 2013-11-09
+ * @copyright (c) 2013, Lukas Kolletzki
+ * @license http://www.gnu.org/licenses/ GNU General Public License, version 3 (GPL-3.0)
+ */
+
+
+/* ##### general ##### */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	width: 100%;
+	background: #fafafa;
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+}
+
+.container {
+	width: 900px;
+	margin: 100px auto 0;
+}
+
+/* ##### header ##### */
+
+header {
+	text-align: center;
+}
+
+header .name {
+	font-size: 60px;
+}
+
+header .slogan {
+	margin-top: 30px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+/* ##### content ##### */
+
+.content {
+	margin: 100px 0 0;
+}
+
+article {
+	margin: 42px 0;
+}
+
+article .title {
+	margin: 0 0 23px 0;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.separator {
+	width: 80%;
+	height: 2px;
+	margin: 30px auto 120px;
+	background: #c1c1c1;
+	border: 0;
+}
+
+/* ##### footer ##### */
+
+footer {
+	width: 720px;
+	margin: 60px auto 20px;
+	font-size: 13px;
+}
+
+footer .social {
+	margin: 0 0 20px 0;
+}
+
+footer .social ul {
+	list-style: none;
+}
+
+footer .social li {
+	display: inline;
+	margin: 0 10px 0 0;
+}
+
+footer .social li:last-child {
+	margin: 0;
+}
+
+footer .legal {
+	text-align: left;
+	float: left;
+}
+
+footer .system-info {
+	margin: 0 0 0 150px;
+	text-align: right;
+	font-style: italic;
+}
+
+/* ##### links ##### */
+
+a, a:visited{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px dotted #000000;
+}
+
+a:hover, a:active {
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+}

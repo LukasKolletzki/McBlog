@@ -1,0 +1,130 @@
+/**
+ * Article stylesheet
+ * @author Lukas Kolletzki <lukas@kolletzki.info>
+ * @version 2013-11-09
+ * @copyright (c) 2013, Lukas Kolletzki
+ * @license http://www.gnu.org/licenses/ GNU General Public License, version 3 (GPL-3.0)
+ */
+
+/* ##### general ##### */
+
+article .text {
+	padding: 0 0 0 25px;
+	font-size: 15px;
+	font-weight: 300;
+}
+
+/* ##### headings ##### */
+
+article .text h1 {
+	margin: 10px 0;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+article .text h2 {
+	margin: 10px 0;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+article .text h3 {
+	margin: 10px 0;
+	font-size: 21px;
+	font-weight: 400;
+}
+
+article .text h4 {
+	margin: 10px 0;
+	font-size: 21px;
+	font-weight: 300;
+}
+
+article .text h5 {
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+article .text h6 {
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+/* ##### text blocks ##### */
+
+article .text p {
+	
+}
+
+article .text blockquote {
+	margin: 20px 40px;
+	padding: 10px;
+	background: #fefefe;
+}
+
+/* ##### lists ##### */
+
+article .text ul {
+	margin: 10px 35px;
+	line-height: 20px;
+}
+
+article .text ul li {
+	margin: 0;
+	padding: 0;
+}
+
+article .text ol {
+	margin: 10px 35px;
+	line-height: 20px;
+}
+
+article .text ol li {
+	margin: 0;
+	padding: 0;
+}
+
+/* ##### code ##### */
+
+article .text pre {
+	margin: 20px 40px;
+	padding: 10px;
+	font-family: Ubuntu Mono, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	background: #fefefe;
+}
+
+article .text p code {
+	padding: 5px 9px;
+	font-family: Ubuntu Mono, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	background: #fefefe;
+}
+
+/* ##### links ##### */
+
+article .text a, a:visited{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px dotted #000000;
+}
+
+article .text a:hover, a:active {
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid #000000;
+}
+
+/* ##### other ##### */
+
+article .text hr {
+	width: 80%;
+	height: 2px;
+	margin: 10px auto;
+	background: #eaeaea;
+	border: 0;
+}
