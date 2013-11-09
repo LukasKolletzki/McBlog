@@ -1,7 +1,7 @@
 /**
- * Main stylesheet
+ * Main stylesheet of dark theme
  * @author Lukas Kolletzki <lukas@kolletzki.info>
- * @version 2013-10-09
+ * @version 2013-11-09
  * @copyright (c) 2013, Lukas Kolletzki
  * @license http://www.gnu.org/licenses/ GNU General Public License, version 3 (GPL-3.0)
  */
@@ -15,11 +15,12 @@
 
 body, html {
 	width: 100%;
-	background: #fafafa;
+	background:  #0b0b0b;
 	font-family: Ubuntu, sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
+	color: #7f7f7f;
 }
 
 .container {
@@ -94,14 +95,14 @@ footer .system-info {
 
 /* ##### links ##### */
 
-a, a:visited{
-	color: #000000;
+a:link, a:visited{
+	color: #7f7f7f;
 	text-decoration: none;
-	border-bottom: 1px dotted #000000;
+	border-bottom: 1px dotted #7f7f7f;
 }
 
 a:hover, a:active {
-	color: #000000;
+	color: #7f7f7f;
 	text-decoration: none;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #7f7f7f;
 }

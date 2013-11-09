@@ -8,7 +8,7 @@
 			{$value.content}
 		</section>
 		<section class="info">
-			Geschrieben von {$value.author} am {$value.time}
+			Written by {$value.author} on {$value.time}
 		</section>
 	</article>
 	

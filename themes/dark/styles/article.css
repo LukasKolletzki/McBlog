@@ -1,5 +1,5 @@
 /**
- * Article stylesheet
+ * Article stylesheet of dark theme
  * @author Lukas Kolletzki <lukas@kolletzki.info>
  * @version 2013-11-09
  * @copyright (c) 2013, Lukas Kolletzki
@@ -69,7 +69,7 @@ article .text h6 {
 /* ----- text blocks ----- */
 
 article .text p {
-	margin: 10px 0;
+	margin: 15px 0;
 }
 
 article .text blockquote {
@@ -108,7 +108,7 @@ article .text pre {
 	font-family: Ubuntu Mono, sans-serif;
 	font-size: 14px;
 	line-height: 16px;
-	background: #fefefe;
+	background: #2d2d2d;
 }
 
 article .text p code {
@@ -122,15 +122,15 @@ article .text p code {
 /* ----- links ----- */
 
 article .text a, a:visited{
-	color: #000000;
+	color: #7f7f7f;
 	text-decoration: none;
-	border-bottom: 1px dotted #000000;
+	border-bottom: 1px dotted #7f7f7f;
 }
 
 article .text a:hover, a:active {
-	color: #000000;
+	color: #7f7f7f;
 	text-decoration: none;
-	border-bottom: 1px solid #000000;
+	border-bottom: 1px solid #7f7f7f;
 }
 
 /* ----- images ----- */

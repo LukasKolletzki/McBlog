@@ -13,7 +13,8 @@ return [
 	"blog" => [
 		"name" => "Your blog's name",
 		"slogan" => "A short description of your blog",
-		"url" => "The URL your blog is available through"
+		"url" => "The URL your blog is available through",
+		"theme" => "bright"
 	], 
 	"system" => [
 		"cache" => true  //if set to false, McBlog will parse your templates every time the page is visited

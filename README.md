@@ -29,32 +29,33 @@ This is the article content. You can write your article here with regular Markdo
 Notice, that the code between the two `@@@` has to be valid JSON. This JSON gets parsed and is available through the variable `articles` in your template. That means, that you can write what ever you want into this JSON, it will be available in your template.
 
 ##Theming
-McBlog doesn't offer full theme support, yet. Never the less, it uses [RainTPL](http://raintpl.com), a very simple but powerful template engine.
+McBlog uses [RainTPL](http://raintpl.com), a very simple but powerful template engine.
+You can change your theme at `includes/config.php`.
 If you want to customize your theme, this information might be useful:
-* McBlog requires the file `templates/main.tpl`, it is your main template file. Using the functions of RainTPL, you can build your theme on top of this file
-* In general, you are able to store styles and javascripts in every folder. Since full theme support isn't available yet, it is recommended to use `styles/` and `javascript/`
+
+* Each theme is represented by a folder in `themes/`.
+* McBlog requires the file `themes/<your_theme_name>/templates/main.tpl`, it is your main template file. Using the functions of RainTPL, you can build your theme on top of this file
+* Theme-related styles, scripts, images and more should be stored in the theme folder.
 
 ###Ressources
 * Variables:
       * `blog` is an array with the values of the `blog` section in `includes/config.php`
       * `articles` is an array containig all articles. Each field contains the JSON you wrote above your article, (See _Writing_) and the field `content` which is your parsed Markdown
 * Constants:
-      * `BASE_URL` is a constant that contains your blog URL, configured in `includes/config.php`. Make sure you use this when including stylesheets or other ressources in your markup
+      * `BASE_URL` is a constant that contains your blog URL, configured in `includes/config.php`.
+      * `THEME_URL` contains the path to your to the current theme.  Make sure you use this when including stylesheets or other ressources in your markup
 * Markdown:
       * McBlog parses standard Markdown. You might have a look at `styles/article.css`, it might be  a sample for own styles
 
 ##Todo
-* Article time/date
 * Sites
-* Full theme support
 * Navigation
 * Pages containing `n` articles
 * Password protected articles
 * Article preview
-* Different authors
 
 ##License
-twoffein-api is a simple class for accessing the Twoffein API
+McBlog is a very simple PHP blog engine, using Markdown files as article ressource.
 Copyright (C) 2013 Lukas Kolletzki
 
 This program is free software: you can redistribute it and/or modify

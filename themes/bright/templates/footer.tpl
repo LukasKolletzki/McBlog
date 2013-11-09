@@ -22,7 +22,7 @@
 				</section>
 				<section class="legal">
 					Copyright (c) 2013, {$blog.name}&nbsp;&nbsp;|&nbsp;&nbsp;
-					<a href="#" target="_blank">Impressum</a>
+					<a href="#" target="_blank">Imprint</a>
 				</section>
 				<section class="system-info">
 					Powered by <a href="http://github.com/LukasKolletzki/McBlog" target="_blank">McBlog</a>
