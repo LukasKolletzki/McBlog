@@ -2,6 +2,16 @@
 A very simple PHP blog engine, using Markdown files as article ressource
 
 ##Installation
+###Simple (requires a GNU/Linux system with SSH access)
+1. Download all files and extract them, if neccessary
+2. Upload all files to your webserver
+3. Open a ssh connection to your server and navigate to McBlog
+3. Make `install.sh` writeable by typing `chmod +x install.sh`
+4. Run `./install.sh` and follow the guide.
+5. Upload some Markdown articles to `articles/`
+6. Have fun, using McBlog ;-)
+
+###Manual
 1. Download all files and extract them, if neccessary
 2. Open `includes/config.php` in a text editor and fill in your values
        * `name` is the name of your blog
