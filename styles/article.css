@@ -133,6 +133,12 @@ article .text a:hover, a:active {
 	border-bottom: 1px solid #000000;
 }
 
+/* ----- images ----- */
+
+article .text img {
+	max-width: 875px;
+}
+
 /* ----- other ----- */
 
 article .text hr {
