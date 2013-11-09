@@ -43,7 +43,7 @@ McBlog uses external libraries and classes
 * [RainTPL](http://raintpl.com)
 
 ##License
-twoffein-api is a simple class for accessing the Twoffein API
+McBlog is a very simple PHP blog engine, using Markdown files as article ressource. 
 Copyright (C) 2013 Lukas Kolletzki
 
 This program is free software: you can redistribute it and/or modify
