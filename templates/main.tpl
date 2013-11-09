@@ -7,6 +7,9 @@
 		<section class="text">
 			{$value.content}
 		</section>
+		<section class="info">
+			Geschrieben von {$value.author} am {$value.time}
+		</section>
 	</article>
 	
 	<section class="separator"></section>

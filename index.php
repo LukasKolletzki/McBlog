@@ -36,10 +36,12 @@ closedir($article_handle);
 //parse articles
 $articles = [];
 foreach ($articles_file as $article_file) {
-	$articles[] = [
-		"title" => str_replace("_", " ", str_replace("-", " – ", str_replace(".md", "", $article_file))),
-		"content" => Parsedown::instance()->parse(file_get_contents("articles/" . $article_file))
-	];
+	$article_content = file_get_contents("articles/" . $article_file);
+	$matches = [];
+	preg_match("/^@{3}(.*)@{3}/s", $article_content, $matches);
+	$articles[] = json_decode($matches[1], true);
+	$articles[key($articles)]["content"] = Parsedown::instance()->parse(str_replace($matches[0], "", $article_content));
+	next($articles);
 }
 
 //put everything together

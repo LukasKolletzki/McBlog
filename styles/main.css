@@ -1,7 +1,7 @@
 /**
  * Main stylesheet
  * @author Lukas Kolletzki <lukas@kolletzki.info>
- * @version 2013-11-09
+ * @version 2013-10-09
  * @copyright (c) 2013, Lukas Kolletzki
  * @license http://www.gnu.org/licenses/ GNU General Public License, version 3 (GPL-3.0)
  */
@@ -49,20 +49,9 @@ header .slogan {
 	margin: 100px 0 0;
 }
 
-article {
-	margin: 42px 0;
-}
-
-article .title {
-	margin: 0 0 23px 0;
-	font-size: 30px;
-	font-weight: 400;
-}
-
 .separator {
-	width: 80%;
 	height: 2px;
-	margin: 30px auto 120px;
+	margin: 2px auto 120px;
 	background: #c1c1c1;
 	border: 0;
 }

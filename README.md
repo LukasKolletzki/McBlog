@@ -12,6 +12,22 @@ A very simple PHP blog engine, using Markdown files as article ressource
 5. Upload some Markdown articles to `articles/`
 6. Have fun, using McBlog ;-)
 
+##Writing
+You can write your articles in regular Markdown.
+McBlog also supports metadata for articles. If you want to specify some information on an article, use the following syntax:
+```
+@@@
+{
+    "title": "Example post",
+    "author": "My name",
+    "time": "13-3-7 at 13:37",
+    "whatever": "whatever content"
+}
+@@@
+This is the article content. You can write your article here with regular Markdown.
+```
+Notice, that the code between the two `@@@` has to be valid JSON. This JSON gets parsed and is available through the variable `articles` in your template. That means, that you can write what ever you want into this JSON, it will be available in your template.
+
 ##Theming
 McBlog doesn't offer full theme support, yet. Never the less, it uses [RainTPL](http://raintpl.com), a very simple but powerful template engine.
 If you want to customize your theme, this information might be useful:
@@ -21,7 +37,7 @@ If you want to customize your theme, this information might be useful:
 ###Ressources
 * Variables:
       * `blog` is an array with the values of the `blog` section in `includes/config.php`
-      * `articles` is an array containig all articles. Each field contains `title` and `content`, where `title` is the article title and `content` is the article content
+      * `articles` is an array containig all articles. Each field contains the JSON you wrote above your article, (See _Writing_) and the field `content` which is your parsed Markdown
 * Constants:
       * `BASE_URL` is a constant that contains your blog URL, configured in `includes/config.php`. Make sure you use this when including stylesheets or other ressources in your markup
 * Markdown:
@@ -37,13 +53,8 @@ If you want to customize your theme, this information might be useful:
 * Article preview
 * Different authors
 
-##External libraries
-McBlog uses external libraries and classes
-* [Parsedown](https://github.com/erusev/parsedown)
-* [RainTPL](http://raintpl.com)
-
 ##License
-McBlog is a very simple PHP blog engine, using Markdown files as article ressource. 
+twoffein-api is a simple class for accessing the Twoffein API
 Copyright (C) 2013 Lukas Kolletzki
 
 This program is free software: you can redistribute it and/or modify

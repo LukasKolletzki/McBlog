@@ -6,7 +6,21 @@
  * @license http://www.gnu.org/licenses/ GNU General Public License, version 3 (GPL-3.0)
  */
 
-/* ##### general ##### */
+article {
+	margin: 42px 0 0;
+}
+
+/* ##### title ##### */
+
+article .title {
+	margin: 0 0 23px 0;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+/* ##### content ##### */
+
+/* ----- general ----- */
 
 article .text {
 	padding: 0 0 0 25px;
@@ -14,7 +28,7 @@ article .text {
 	font-weight: 300;
 }
 
-/* ##### headings ##### */
+/* ----- headings ----- */
 
 article .text h1 {
 	margin: 10px 0;
@@ -52,19 +66,19 @@ article .text h6 {
 	font-weight: 300;
 }
 
-/* ##### text blocks ##### */
+/* ----- text blocks ----- */
 
 article .text p {
-	
+	margin: 10px 0;
 }
 
 article .text blockquote {
-	margin: 20px 40px;
+	margin: 15px 40px;
 	padding: 10px;
 	background: #fefefe;
 }
 
-/* ##### lists ##### */
+/* ----- lists ----- */
 
 article .text ul {
 	margin: 10px 35px;
@@ -86,10 +100,10 @@ article .text ol li {
 	padding: 0;
 }
 
-/* ##### code ##### */
+/* ----- code ----- */
 
 article .text pre {
-	margin: 20px 40px;
+	margin: 15px 40px;
 	padding: 10px;
 	font-family: Ubuntu Mono, sans-serif;
 	font-size: 14px;
@@ -105,7 +119,7 @@ article .text p code {
 	background: #fefefe;
 }
 
-/* ##### links ##### */
+/* ----- links ----- */
 
 article .text a, a:visited{
 	color: #000000;
@@ -119,7 +133,7 @@ article .text a:hover, a:active {
 	border-bottom: 1px solid #000000;
 }
 
-/* ##### other ##### */
+/* ----- other ----- */
 
 article .text hr {
 	width: 80%;
@@ -127,4 +141,12 @@ article .text hr {
 	margin: 10px auto;
 	background: #eaeaea;
 	border: 0;
+}
+
+/* ##### footer ##### */
+
+article .info {
+	margin: 40px 0 0;
+	font-size: 14px;
+	font-style: italic;
 }
