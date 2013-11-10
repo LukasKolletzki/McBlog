@@ -7,8 +7,8 @@
 		<meta name="generator" content="McBlog" />
 
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu+Mono:400|Ubuntu:400,300">
-		<link rel="stylesheet" type="text/css" href="{#BASE_URL#}/styles/main.css" />
-		<link rel="stylesheet" type="text/css" href="{#BASE_URL#}/styles/article.css" />
+		<link rel="stylesheet" type="text/css" href="{#THEME_URL#}/styles/main.css" />
+		<link rel="stylesheet" type="text/css" href="{#THEME_URL#}/styles/article.css" />
 	</head>
 
 	<body>

@@ -22,18 +22,16 @@ return [
 		\"name\" => \"$blogname\",
 		\"slogan\" => \"$blogslogan\",
 		\"url\" => \"$blogurl\",
-		\"theme\" => \"day\"
+		\"theme\" => \"bright\"
 	],
 	\"system\" => [
-		\"cache\" => false  //if set to false, McBlog will parse your templates every time the page is visited
+		\"cache\" => true  //if set to false, McBlog will parse your templates every time the page is visited
 	]
 ];" > includes/config.php
 echo "Config file created successfully."
 echo "Your webserver user (usually www-data): "
 read webserveruser
-chmod 0755 cache/
+chmod 0775 cache/
 chown $USER:$webserveruser cache/
 echo "Cache folder made writeable"
-rm articles/index.html
 echo "Everything set up correctly, have fun writing articles ;-)"
-

@@ -1,4 +1,10 @@
-#Welcome to McBlog
+@@@
+{
+    "title": "Welcome to McBlog",
+    "author": "Webmaster",
+    "time": "first setup"
+}
+@@@
 You have successfully installed and configured McBlog.
 
 If you have any questions, these links may offer help: 
