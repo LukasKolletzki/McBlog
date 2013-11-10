@@ -11,7 +11,7 @@ A very simple PHP blog engine, using Markdown files as article ressource
 5. Upload some Markdown articles to `articles/`
 6. Have fun, using McBlog ;-)
 
-###Manual
+###Manually
 1. Download all files and extract them, if neccessary
 2. Open `includes/config.php` in a text editor and fill in your values
        * `name` is the name of your blog
@@ -19,12 +19,12 @@ A very simple PHP blog engine, using Markdown files as article ressource
        * `url` is the URL of your blog
 3. Upload all files to your webserver
 4. Make `cache/` folder writeable
-5. Upload some Markdown articles to `articles/`
+5. Upload some Markdown articles to `content/articles/` and some Markdown pages to `content/pages/`
 6. Have fun, using McBlog ;-)
 
 ##Writing
-You can write your articles in regular Markdown.
-McBlog also supports metadata for articles. If you want to specify some information on an article, use the following syntax:
+You can write your articles and pages in regular Markdown.
+McBlog also supports metadata for articles and pages. If you want to specify some information on an article or a page, use the following syntax:
 ```
 @@@
 {
@@ -34,9 +34,9 @@ McBlog also supports metadata for articles. If you want to specify some informat
     "whatever": "whatever content"
 }
 @@@
-This is the article content. You can write your article here with regular Markdown.
+This is the article or page content. You can write your article or page here with regular Markdown.
 ```
-Notice, that the code between the two `@@@` has to be valid JSON. This JSON gets parsed and is available through the variable `articles` in your template. That means, that you can write what ever you want into this JSON, it will be available in your template.
+Notice, that the code between the two `@@@` has to be valid JSON. This JSON gets parsed and is available through the variable `articles` or `page` in your template. That means, that you can write what ever you want into this JSON, it will be available in your template.
 
 ##Theming
 McBlog uses [RainTPL](http://raintpl.com), a very simple but powerful template engine.
@@ -44,22 +44,23 @@ You can change your theme at `includes/config.php`.
 If you want to customize your theme, this information might be useful:
 
 * Each theme is represented by a folder in `themes/`.
-* McBlog requires the file `themes/<your_theme_name>/templates/main.tpl`, it is your main template file. Using the functions of RainTPL, you can build your theme on top of this file
+* McBlog requires the files `themes/<your_theme_name>/templates/article.tpl` and `themes/<your_theme_name>/templates/page.tpl`, they are your main template file. Using the functions of RainTPL, you can build your theme on top of these files.
 * Theme-related styles, scripts, images and more should be stored in the theme folder.
+* The navigation gets automatically generated, see _Ressources_ for more information
 
 ###Ressources
 * Variables:
       * `blog` is an array with the values of the `blog` section in `includes/config.php`
-      * `articles` is an array containig all articles. Each field contains the JSON you wrote above your article, (See _Writing_) and the field `content` which is your parsed Markdown
+      * `nav` is an array containing the navigation. Each field is an array with `test` and `url` in it, representing the link text and the link url.
+      * `articles` is an array containig all articles. Each field contains the JSON you wrote above your article, (see _Writing_) and the field `content` which is your parsed Markdown __[only available in blog]__
+      * `page` contains the content of the current page and the JSON, wrote above (see _Writing_)__[only avalable on pages]__
 * Constants:
       * `BASE_URL` is a constant that contains your blog URL, configured in `includes/config.php`.
       * `THEME_URL` contains the path to your to the current theme.  Make sure you use this when including stylesheets or other ressources in your markup
 * Markdown:
-      * McBlog parses standard Markdown. You might have a look at `styles/article.css`, it might be  a sample for own styles
+      * McBlog parses standard Markdown. You might have a look at `styles/markdown.css`, it might be  a sample for own styles
 
 ##Todo
-* Sites
-* Navigation
 * Pages containing `n` articles
 * Password protected articles
 * Article preview

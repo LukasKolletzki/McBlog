@@ -1,6 +1,6 @@
 {include="header"}
 {loop="articles"}
-	<article>
+	<article class="markdown">
 		<section class="title">
 			{$value.title}
 		</section>

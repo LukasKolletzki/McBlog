@@ -43,6 +43,24 @@ header .slogan {
 	font-style: italic;
 }
 
+header nav {
+	margin: 30px;
+	font-size: 25px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	margin: 0 40px 0 0;
+	display: inline;
+}
+
+header nav ul li:last-child {
+	margin: 0;
+}
+
 /* ##### content ##### */
 
 .content {
