@@ -64,6 +64,7 @@ If you want to customize your theme, this information might be useful:
 * Pages containing `n` articles
 * Password protected articles
 * Article preview
+* RSS/Atom feed
 
 ##License
 McBlog is a very simple PHP blog engine, using Markdown files as article ressource.
