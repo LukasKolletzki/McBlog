@@ -34,4 +34,4 @@ read webserveruser
 chmod 0775 cache/
 chown $USER:$webserveruser cache/
 echo "Cache folder made writeable"
-echo "Everything set up correctly, have fun writing articles ;-)"
+echo "Everything set up correctly, have fun writing articles :)"
